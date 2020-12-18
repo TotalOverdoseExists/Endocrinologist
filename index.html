@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Endocrinologist</title>
+	<link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="./assets/css/css.css">
 	<script src="./assets/js/js.js"></script>
@@ -12,10 +13,29 @@
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="col-3"></div>
-				<div class="col-4"></div>
-				<div class="col-2"></div>
-				<div class="col-3"></div>
+				<div class="col-3">
+					<div class="m-logo">
+						<img src="./assets/img/logo.svg" alt="logo">
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="m-address">
+						<span>м. Алексеевская, м. ВДНХ</span>
+						<p>8 (495) 120-08-10</p>
+						<span>г. Москва, Проспект Мира, д. 105, стр. 1</span>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="m-openingHours">
+						<p>Пн-Пт:</p>
+						<span>08:00 - 21:00</span>
+						<p>Сб-Вс:</p>
+						<span>09:00 - 20:00</span>
+					</div>
+				</div>
+				<div class="col-3">
+					<button class="js-popupFormToggle">Записаться на прием</button>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -25,58 +45,147 @@
 				<div class="col-12">
 					<ul>
 						<li>
-							<a href="#">Образование</a>
+							<a href="#">Lorem</a>
 						</li>
 						<li>
-							<a href="#">Курсы повышения квалификации</a>
+							<a href="#">Ipsum</a>
 						</li>
 						<li>
-							<a href="#">Стажировки и специализации</a>
+							<a href="#">Dolor</a>
 						</li>
 						<li>
-							<a href="#">О себе</a>
+							<a href="#">Sit</a>
 						</li>
 						<li>
-							<a href="#">Специализация</a>
+							<a href="#">Amet</a>
 						</li>
 						<li>
-							<a href="#">Оказываемые услуги</a>
+							<a href="#">Consectetur</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</nav>
+	<section id="l-presentationHeader">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h1>Lorem ipsum</h1>
+				</div>
+			</div>
+		</div>
+	</section>
 	<main>
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h1>Тишова Юлия Александровна</h1>
+					<div class="m-specialistInfo">
+						<img src="./assets/img/specialist.png" alt="Lorem ipsim">
+						<article>
+							<h2>
+								Эндокринолог
+								<span>Врач высшей категории, кандидат медицинских наук</span>
+							</h2>
+							<hr>
+							<p>Стаж: <b>14 лет</b></p>
+							<p>Приём от: <b>6000 руб.</b></p>
+							<hr>
+							<button class="js-popupFormToggle">Записаться на прием</button>
+							<div class="m-bookformPlace"></div>
+						</article>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-12"></div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col-12"></div>
+				<div class="col-12">
+					<div class="m-articles">
+						<h2>Lorem</h2>
+						<ul>
+							<li>Lorem ipsum dolor sit amet.</li>
+							<li>Consectetur adipiscing elit.</li>
+							<li>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+						</ul>
+						<h2>Ipsum</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="m-servicesTable">
+						<h2>Оказываемые услуги</h2>
+						<table>
+							<tr>
+								<th>Наименование услуги</th>
+								<th>Стоимость </th>
+								<th>Запись</th>
+							</tr>
+							<tr>
+								<td>Lorem ipsum dolor sit amet</td>
+								<td>2 500 руб.</td>
+								<td><button class="js-popupFormToggle">Записаться</button></td>
+							</tr>
+							<tr>
+								<td>Consectetur adipiscing elit</td>
+								<td>2 500 руб.</td>
+								<td><button class="js-popupFormToggle">Записаться</button></td>
+							</tr>
+						</table>
+					</div>
+				</div>
 			</div>
 		</div>
 	</main>
+	<section class="m-form">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2>Записаться на прием к врачу</h2>
+					<p>Оставьте Ваш номер, и наш специалист перезвонит Вам!</p>
+					<form>
+						<input type="text" name="clientName" placeholder="Ваше имя:">
+						<input type="tel" name="clientTel" placeholder="Ваш телефон:">
+						<button type="submit">Записаться</button>
+					</form>
+					<span>Нажимая на кнопку, вы даете <a href="#">согласие на обработку своих персональных данных</a></span>
+				</div>
+			</div>
+		</div>
+	</section>
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-6"></div>
-				<div class="col-6"></div>
+				<div class="col-6">
+					<div class="m-address">
+						<span>м. Алексеевская, м. ВДНХ</span>
+						<p>8 (495) 120-08-10</p>
+						<span>г. Москва, Проспект Мира, д. 105, стр. 1</span>
+					</div>
+				</div>
+				<div class="col-3 offset-3">
+					<button class="js-popupFormToggle">Записаться на прием</button>
+				</div>
 			</div>
 			<div class="row">
-				<div class="col-12"></div>
+				<div class="col-10">
+					<span class="m-copyright">© 2020 Многопрофильная клиника «К медицина»</span>
+					<span>Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации.</span>
+				</div>
+				<div class="col-2">
+					<a href="https://a1-reklama.ru" target="_blank" rel="noopener noreferrer">
+						<img src="./assets/img/logoa1.png" alt="developer">
+					</a>
+				</div>
 			</div>
 		</div>
 	</footer>
-	<div id="popupForm"></div>
+	<div class="popupForm">
+		<button>×</button>
+		<h2>Записаться на прием</h2>
+		<form>
+			<input type="text" name="clientName" placeholder="Ваше имя:">
+			<input type="tel" name="clientTel" placeholder="Ваш телефон:">
+			<button type="submit">Записаться</button>
+		</form>
+	</div>
 </body>
 </html>
