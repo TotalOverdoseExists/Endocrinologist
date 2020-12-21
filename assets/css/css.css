@@ -1,0 +1,38 @@
+@font-face {
+	font-family: 'MSRegular';
+	src: url('../fonts/MuseoSansRegular.ttf');
+}
+@font-face {
+	font-family: 'MSLight';
+	src: url('../fonts/MuseoSansLight.ttf');
+}
+@font-face {
+	font-family: 'MSMedium';
+	src: url('../fonts/MuseoSansMedium.ttf');
+}
+@font-face {
+	font-family: 'MSBold';
+	src: url('../fonts/MuseoSansBold.ttf');
+}
+@font-face {
+	font-family: 'MSBlack';
+	src: url('../fonts/MuseoSansBlack.ttf');
+}
+
+:root {
+	--shadow: 0px 25px 70px rgba(37, 147, 144, 0.08);
+}
+
+body {
+	font-family: 'MSRegular', sans-serif;
+	background: #f7fbfb;
+}
+header {
+	background: #fff;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	box-shadow: var(--shadow);
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 0 35px;
+}
