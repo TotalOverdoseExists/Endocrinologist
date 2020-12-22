@@ -1,0 +1,38 @@
+<svg width="39" height="39" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>mobMenuButton</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-1261 -13912)">
+<g id="mobMenuButton">
+<g id="Group 2.3">
+<g id="Ellipse 6.3">
+<use xlink:href="#path0_fill" transform="translate(1265.88 13916.3)" fill="#e30613"/>
+</g>
+<g id="Ellipse 6.4">
+<mask id="mask0_outline_ins">
+<use xlink:href="#path1_fill" fill="white" transform="translate(1261 13912)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path2_stroke_2x" transform="translate(1261 13912)" fill="#e30613" fill-opacity="0.34"/>
+</g>
+</g>
+</g>
+<g id="Group 4">
+<g id="Rectangle 42">
+<use xlink:href="#path3_fill" transform="translate(1274 13926)" fill="#FFFFFF"/>
+</g>
+<g id="Rectangle 42.1">
+<use xlink:href="#path3_fill" transform="translate(1274 13930)" fill="#FFFFFF"/>
+</g>
+<g id="Rectangle 42.2">
+<use xlink:href="#path3_fill" transform="translate(1274 13934)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 29.8594 14.9297C 29.8594 23.1751 23.1751 29.8594 14.9297 29.8594C 6.68425 29.8594 0 23.1751 0 14.9297C 0 6.68425 6.68425 0 14.9297 0C 23.1751 0 29.8594 6.68425 29.8594 14.9297Z"/>
+<path id="path1_fill" d="M 39 19.5C 39 30.2696 30.2696 39 19.5 39C 8.73045 39 0 30.2696 0 19.5C 0 8.73045 8.73045 0 19.5 0C 30.2696 0 39 8.73045 39 19.5Z"/>
+<path id="path2_stroke_2x" d="M 38 19.5C 38 29.7173 29.7173 38 19.5 38L 19.5 40C 30.8218 40 40 30.8218 40 19.5L 38 19.5ZM 19.5 38C 9.28273 38 1 29.7173 1 19.5L -1 19.5C -1 30.8218 8.17816 40 19.5 40L 19.5 38ZM 1 19.5C 1 9.28273 9.28273 1 19.5 1L 19.5 -1C 8.17816 -1 -1 8.17816 -1 19.5L 1 19.5ZM 19.5 1C 29.7173 1 38 9.28273 38 19.5L 40 19.5C 40 8.17816 30.8218 -1 19.5 -1L 19.5 1Z"/>
+<path id="path3_fill" d="M 0 0L 14 0L 14 2L 0 2L 0 0Z"/>
+</defs>
+</svg>

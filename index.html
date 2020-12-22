@@ -10,55 +10,70 @@
 	<script src="./assets/js/js.js"></script>
 </head>
 <body>
-	<header class="container">
-		<div class="row align-items-center">
-			<div class="col-3">
-				<div class="m-logo">
-					<img src="./assets/img/logo.svg" alt="logo">
+	<header>
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-8 offset-2 col-lg-3 offset-lg-0">
+					<div class="m-logo">
+						<img src="./assets/img/logo.svg" alt="logo">
+					</div>
 				</div>
-			</div>
-			<div class="col-4">
-				<div class="m-address">
-					<span>м. Алексеевская, м. ВДНХ</span>
-					<p>8 (495) 120-08-10</p>
-					<span>г. Москва, Проспект Мира, д. 105, стр. 1</span>
+				<div class="d-none d-lg-block col-lg-4">
+					<div class="m-address">
+						<span>м. Алексеевская, м. ВДНХ</span>
+						<p>8 (495) 120-08-10</p>
+						<span>г. Москва, Проспект Мира, д. 105, стр. 1</span>
+					</div>
 				</div>
-			</div>
-			<div class="col-2">
-				<div class="m-openingHours">
-					<p>Пн-Пт:</p>
-					<span>08:00 - 21:00</span>
-					<p>Сб-Вс:</p>
-					<span>09:00 - 20:00</span>
+				<div class="d-none d-lg-block col-lg-2">
+					<div class="m-openingHours">
+						<p>Пн-Пт:</p>
+						<span>08:00 - 21:00</span>
+						<p>Сб-Вс:</p>
+						<span>09:00 - 20:00</span>
+					</div>
 				</div>
-			</div>
-			<div class="col-3">
-				<button class="js-popupFormToggle">Записаться на прием</button>
+				<div class="d-none d-lg-block col-lg-3">
+					<button class="js-popupFormToggle">Записаться на прием</button>
+				</div>
+				<div class="col-2 d-lg-none">
+					<button id="l-hamburger"></button>
+				</div>
+				<div class="col-12 d-lg-none">
+					<div class="m-address">
+						<p>8 (495) 120-08-10</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>
 	<nav>
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-8 offset-4 col-lg-12 offset-lg-0">
 					<ul>
 						<li>
-							<a href="#">Lorem</a>
+							<a href="#lorem">Lorem</a>
 						</li>
+						<i></i>
 						<li>
-							<a href="#">Ipsum</a>
+							<a href="#ipsum">Ipsum</a>
 						</li>
+						<i></i>
 						<li>
-							<a href="#">Dolor</a>
+							<a href="#dolor">Dolor</a>
 						</li>
+						<i></i>
 						<li>
-							<a href="#">Sit</a>
+							<a href="#sit">Sit</a>
 						</li>
+						<i></i>
 						<li>
-							<a href="#">Amet</a>
+							<a href="#amet">Amet</a>
 						</li>
+						<i></i>
 						<li>
-							<a href="#">Consectetur</a>
+							<a href="#consectetur">Consectetur</a>
 						</li>
 					</ul>
 				</div>
@@ -79,19 +94,25 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="m-specialistInfo">
-						<img src="./assets/img/specialist.png" alt="Lorem ipsim">
-						<article>
-							<h2>
-								Эндокринолог
-								<span>Врач высшей категории, кандидат медицинских наук</span>
-							</h2>
-							<hr>
-							<p>Стаж: <b>14 лет</b></p>
-							<p>Приём от: <b>6000 руб.</b></p>
-							<hr>
-							<button class="js-popupFormToggle">Записаться на прием</button>
-							<div class="m-bookformPlace"></div>
-						</article>
+						<div class="row">
+							<div class="col-12 col-lg-5">
+								<img src="./assets/img/specialist.png" alt="Lorem ipsim">
+							</div>
+							<div class="col-12 col-lg-7">
+								<article>
+									<h2>
+										Эндокринолог
+										<span>Врач высшей категории, кандидат медицинских наук</span>
+									</h2>
+									<hr>
+									<p>Стаж: <b>14 лет</b></p>
+									<p>Приём от: <b>6000 руб.</b></p>
+									<hr>
+									<button class="js-popupFormToggle">Записаться на прием</button>
+									<div class="m-bookformPlace">ТУТ МЕСТО ДЛЯ БУКФОРМЫ</div>
+								</article>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -100,13 +121,13 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="m-articles">
-						<h2>Lorem</h2>
+						<h2 id="lorem">Lorem</h2>
 						<ul>
 							<li>Lorem ipsum dolor sit amet.</li>
 							<li>Consectetur adipiscing elit.</li>
 							<li>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
 						</ul>
-						<h2>Ipsum</h2>
+						<h2 id="ipsum">Ipsum</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
 					<div class="m-servicesTable">
@@ -139,44 +160,57 @@
 				<div class="col-12">
 					<h2>Записаться на прием к врачу</h2>
 					<p>Оставьте Ваш номер, и наш специалист перезвонит Вам!</p>
-					<form>
-						<input type="text" name="clientName" placeholder="Ваше имя:">
-						<input type="tel" name="clientTel" placeholder="Ваш телефон:">
-						<button type="submit">Записаться</button>
-					</form>
-					<span>Нажимая на кнопку, вы даете <a href="#">согласие на обработку своих персональных данных</a></span>
+					<div class="row">
+						<div class="col-12 col-lg-7">
+							<form>
+								<div class="row">
+									<div class="col-12 col-lg-4">
+										<input type="text" name="clientName" placeholder="Ваше имя:">
+									</div>
+									<div class="col-12 col-lg-4">
+										<input type="tel" name="clientTel" placeholder="Ваш телефон:">
+									</div>
+									<div class="col-12 col-lg-4">
+										<button type="submit">Записаться</button>
+									</div>
+								</div>
+							</form>
+							<span>Нажимая на кнопку, вы даете <a href="#">согласие на обработку своих персональных данных</a></span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<footer>
 		<div class="container">
-			<div class="row">
-				<div class="col-6">
+			<div class="row align-items-center">
+				<div class="col-12 col-lg-6">
 					<div class="m-address">
 						<span>м. Алексеевская, м. ВДНХ</span>
 						<p>8 (495) 120-08-10</p>
 						<span>г. Москва, Проспект Мира, д. 105, стр. 1</span>
 					</div>
 				</div>
-				<div class="col-3 offset-3">
+				<div class="col-12 col-lg-3 offset-lg-3">
 					<button class="js-popupFormToggle">Записаться на прием</button>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-10">
+			<hr>
+			<div class="row align-items-center">
+				<div class="col-12 col-lg-10">
 					<span class="m-copyright">© 2020 Многопрофильная клиника «К медицина»</span>
-					<span>Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации.</span>
+					<span class="m-noOffer">Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 (2) Гражданского кодекса Российской Федерации.</span>
 				</div>
-				<div class="col-2">
-					<a href="https://a1-reklama.ru" target="_blank" rel="noopener noreferrer">
+				<div class="col-12 col-lg-2">
+					<a class="m-developer" href="https://a1-reklama.ru" target="_blank" rel="noopener noreferrer">
 						<img src="./assets/img/logoa1.png" alt="developer">
 					</a>
 				</div>
 			</div>
 		</div>
 	</footer>
-	<div class="popupForm">
+	<div class="m-popupForm">
 		<button>×</button>
 		<h2>Записаться на прием</h2>
 		<form>
