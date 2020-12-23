@@ -216,6 +216,15 @@ footer {
 	height: 100%;
 	z-index: 10;
 }
+#l-popupPic {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
 
 .m-logo img {
 	max-width: 100%;
@@ -258,7 +267,7 @@ footer {
 	border-top-left-radius: 25px;
 }
 .m-bookformPlace {
-	margin-top: 25px;
+	margin: 25px 0;
 }
 .m-articles {
 	padding-left: 50px;
@@ -291,6 +300,23 @@ footer {
 .m-servicesTable th, .m-servicesTable td {
 	padding: 20px;
 	border-bottom: 1px solid var(--lightGrey);
+}
+.m-servicesTable tr:last-child > td {
+	border-bottom: none;
+}
+.m-sertificates {
+	margin: 25px 0;
+}
+.m-sertificates > .container {
+	border-radius: 30px;
+	box-shadow: var(--shadow);
+	padding: 25px 50px;
+	background-color: #fff;
+}
+.m-sertificates img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
 }
 .m-form {
 	margin: 25px 0;
@@ -357,9 +383,15 @@ footer {
 	color: rgba(68, 68, 68, .6);
 	line-height: 26px;
 }
+.m-picPopup {
+	max-width: none;
+	max-height: 100%;
+}
 button[data-use='close'] {
 	padding: 5px;
 	text-align: center;
+	width: 30px;
+	height: 30px;
 }
 
 .js-popupOpened {
@@ -406,6 +438,9 @@ button[data-use='close'] {
 	}
 	h1 {
 		font-size: 28px;
+	}
+	main > .container:first-child {
+		margin-bottom: 25px;
 	}
 	main > .container:first-child, main > .container:last-child {
 		background: none;
