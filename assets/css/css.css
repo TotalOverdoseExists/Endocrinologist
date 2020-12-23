@@ -20,7 +20,7 @@
 }
 
 :root {
-	--shadow: 0px 25px 70px rgba(37, 147, 144, 0.08);
+	--shadow: 0px 25px 70px rgba(37, 147, 144, .08);
 	--grey: #444444;
 	--lightGrey: #f1f1f1;
 	--red: #e30613;
@@ -43,13 +43,13 @@ button {
 	cursor: pointer;
 	transition: all ease .25s;
 	background: var(--red);
-	box-shadow: 4px 4px 16px rgba(227, 6, 19, 0.30);
+	box-shadow: 4px 4px 16px rgba(227, 6, 19, .30);
 	width: 100%;
 	position: relative;
 }
 button:hover {
 	background: var(--darkRed);
-	box-shadow: 4px 4px 16px rgba(177, 0, 11, 0.40);
+	box-shadow: 4px 4px 16px rgba(177, 0, 11, .40);
 }
 button::after {
 	content: '';
@@ -57,7 +57,7 @@ button::after {
 	position: absolute;
 	width: calc(100% + 10px);
 	height: calc(100% + 10px);
-	border: 1px solid rgba(255, 0, 0, 0.16);
+	border: 1px solid rgba(255, 0, 0, .16);
 	border-radius: 40px;
 	top: -5px;
 	left: -5px;
@@ -207,6 +207,15 @@ footer {
 #l-presentationHeader {
 	margin: 25px 0;
 }
+#l-popupForm {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
 
 .m-logo img {
 	max-width: 100%;
@@ -215,7 +224,7 @@ footer {
 .m-address span {
 	font-family: 'MSMedium';
 	font-size: 13px;
-	color: rgba(68, 68, 68, 0.64);
+	color: rgba(68, 68, 68, .64);
 }
 .m-address p {
 	font-family: 'MSBlack';
@@ -302,7 +311,7 @@ footer {
 .m-form span {
 	font-family: 'MSmedium';
 	font-size: 13px;
-	color: rgba(68, 68, 68, 0.6);
+	color: rgba(68, 68, 68, .6);
 	line-height: 26px;
 }
 .m-copyright {
@@ -315,11 +324,49 @@ footer {
 .m-noOffer {
 	font-family: 'MSmedium';
 	font-size: 14px;
-	color: rgba(68, 68, 68, 0.64);
+	color: rgba(68, 68, 68, .64);
 	display: block;
 }
-.m-popupForm {
-	display: none;
+.m-popupLayout {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	z-index: 11;
+}
+.m-popup {
+	position: relative;
+	max-width: 400px;
+	margin: auto;
+	background: #fff;
+	padding: 25px;
+	border-radius: 25px;
+	z-index: 12;
+}
+.m-popup h2 {
+	margin-bottom: 25px;
+}
+.m-popup input {
+	margin-bottom: 10px;
+}
+.m-popup span {
+	font-family: 'MSmedium';
+	font-size: 13px;
+	color: rgba(68, 68, 68, .6);
+	line-height: 26px;
+}
+button[data-use='close'] {
+	padding: 5px;
+	text-align: center;
+}
+
+.js-popupOpened {
+	display: flex !important;
+}
+.js-menuOpened {
+	display: block;
 }
 
 @media (max-width: 991px) {
@@ -336,6 +383,9 @@ footer {
 	nav {
 		display: none;
 		z-index: 9;
+		width: 70%;
+		position: fixed;
+		right: 0;
 	}
 	nav > .container {
 		background: none;
@@ -345,6 +395,14 @@ footer {
 	}
 	nav ul {
 		flex-direction: column;
+		background: #fff;
+		border-top: 5px solid var(--red);
+		box-shadow: -1px 1px 1px 1px var(--lightGrey);
+	}
+	nav i {
+		width: 100%;
+		height: 1px;
+		margin: 10px;
 	}
 	h1 {
 		font-size: 28px;

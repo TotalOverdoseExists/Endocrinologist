@@ -47,10 +47,10 @@
 			</div>
 		</div>
 	</header>
-	<nav>
+	<nav id="nav">
 		<div class="container">
 			<div class="row">
-				<div class="col-8 offset-4 col-lg-12 offset-lg-0">
+				<div class="col-12">
 					<ul>
 						<li>
 							<a href="#lorem">Lorem</a>
@@ -210,14 +210,36 @@
 			</div>
 		</div>
 	</footer>
-	<div class="m-popupForm">
-		<button>×</button>
-		<h2>Записаться на прием</h2>
-		<form>
-			<input type="text" name="clientName" placeholder="Ваше имя:">
-			<input type="tel" name="clientTel" placeholder="Ваш телефон:">
-			<button type="submit">Записаться</button>
-		</form>
+	<div id="l-popupForm">
+		<div class="m-popupLayout"></div>
+		<div class="m-popup">
+			<div class="container">
+				<div class="row">
+					<div class="col-2 offset-10">
+						<button data-use="close">×</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<h2>Записаться на прием</h2>
+						<form>
+							<div class="row">
+								<div class="col-12">
+									<input type="text" name="clientName" placeholder="Ваше имя:">
+								</div>
+								<div class="col-12">
+									<input type="tel" name="clientTel" placeholder="Ваш телефон:">
+								</div>
+								<div class="col-12">
+									<button type="submit">Записаться</button>
+								</div>
+							</div>
+						</form>
+						<span>Нажимая на кнопку, вы даете <a href="#">согласие на обработку своих персональных данных</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
