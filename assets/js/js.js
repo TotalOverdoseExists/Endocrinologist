@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const forms = document.querySelectorAll('form')
 	const popupPics = document.querySelectorAll('.js-popupPic')
 	const popupPic = document.querySelector('#l-popupPic')
-	const popupPicContainer = popupPic.querySelector('#picContainer')
+	const popupPicContainer = popupPic.querySelector('#l-picContainer')
 	const popupPicClose = popupPic.querySelector('button[data-use="close"]')
 	let currentPic
 
@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			popupForm.classList.add('js-popupOpened')
 		})
 	})
+
 	popupClose.addEventListener('click', () => {
 		popupForm.classList.remove('js-popupOpened')
 	})
@@ -42,6 +43,18 @@ document.addEventListener('DOMContentLoaded', () => {
 	forms.forEach(form => {
 		form.addEventListener('submit', e => {
 			e.preventDefault()
+			fetch('./send.php', {
+				method: 'post',
+				mode: 'no-cors',
+				body: new FormData(form)
+			})
+			.then(r => {
+				alert('Форма отправлена!')
+				form.reset()
+			})
+			.catch(e => {
+				alert('Ошибка отправки: ', e)
+			})
 		})
 	})
 

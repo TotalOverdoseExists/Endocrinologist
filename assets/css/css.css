@@ -225,6 +225,13 @@ footer {
 	height: 100%;
 	z-index: 10;
 }
+#l-picContainer {
+	margin-top: 10px;
+}
+#l-picContainer img {
+	max-width: 100%;
+	height: auto;
+}
 
 .m-logo img {
 	max-width: 100%;
